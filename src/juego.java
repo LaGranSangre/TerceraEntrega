@@ -34,7 +34,7 @@ public class juego {
 		System.out.println();
 		System.out.println("Bienvenido " + str + " que te diviertas jugando :)");
 		System.out.println();
-		return Rend.PantallaInicio();
+		return 0;
 	}
 
 	public int MatarEnemigo(String str) {
@@ -389,6 +389,8 @@ public class juego {
 	}
 
 	public void enviar_comando(char comando) {
+		if (comando=='t' || comando=='T')
+			Rend.CargarInstrucciones();
 		Interprete.InterpretarAccion(comando, cristobal, hermana, mapa_actual);
 	}
 
@@ -433,9 +435,10 @@ public class juego {
 	
 	public int EmpezarJuego(){
 		int opcion;
-		if (PantallaInicio() == 0) // Salir del juego
-			return 0;
-
+		if (Rend.PantallaInicio() == 0) // Salir del juego
+			return 0;		
+		PantallaInicio();
+		Rend.CargarInstrucciones();
 		Scanner s = new Scanner(System.in);
 		String str;
 		jugando=true;

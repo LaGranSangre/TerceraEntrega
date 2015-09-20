@@ -191,4 +191,49 @@ public class Renderizador {
 		   }
 	    }
 	}
+	
+	public void mostrarInstr(String[] instr){
+		limpiarPantalla();		
+			for(int i=0;instr[i].length()!=0;i++){
+				System.out.println(instr[i]);
+				for(int j=0;j<5;j++)
+					for(int k=0;k<1000000000;k++);;
+			}		
+	}
+	
+	public void CargarInstrucciones(){ 
+		File archivo = null;
+	    FileReader fr = null;
+	    BufferedReader br = null;
+	    String[] instr = new String[50];	    
+			try{								
+				archivo =  new File("Instrucciones.txt");
+				fr = new FileReader(archivo);
+				br = new BufferedReader(fr);
+				
+				String linea;
+				int fila = 0;
+				while((linea=br.readLine())!=null){
+					instr[fila]=linea;
+					fila++;
+				}
+				instr[fila]="";
+				mostrarInstr(instr);
+				System.out.println("Pulse cualquier tecla para continuar....");
+				Scanner s = new Scanner(System.in);
+				String str;
+				str = s.nextLine();
+			}catch(Exception e){
+		         e.printStackTrace();
+			}finally{
+		        try{                    
+		           if( null != fr ){   
+		              fr.close();     
+		           }                  
+		        }catch (Exception e2){ 
+		           e2.printStackTrace();
+		        }
+		   }
+	    
+	}
 }
