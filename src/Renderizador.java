@@ -12,7 +12,7 @@ public class Renderizador {
 		CargarHistorias();
 	}
 	
-	public void mostrarMapa(Mapa m,PersonajePrincipal p1,PersonajePrincipal  p2){
+	public void mostrarMapa(Mapa m,Personaje p1,Personaje p2){
 		int xC=p1.getPosX(),yC=p1.getPosY();
 		int xH=p2.getPosX(),yH=p2.getPosY();
 		generarMapaAMostrar(m);

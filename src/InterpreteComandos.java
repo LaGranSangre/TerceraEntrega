@@ -16,7 +16,7 @@ public class InterpreteComandos {
 		}
 	}
 
-	public void InterpretarAccion(char key, PersonajePrincipal cristobal, PersonajePrincipal hermana, Mapa mapa) {
+	public void InterpretarAccion(char key, Personaje cristobal, Personaje hermana, Mapa mapa) {
 		int x, y, xH, yH, tipoCelda, numFil, numCol;
 		x = cristobal.getPosX();// posicion de cristobal
 		y = cristobal.getPosY();

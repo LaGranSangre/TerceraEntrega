@@ -1,9 +1,10 @@
 
-public class Personaje implements Mostrable{
+public abstract class Personaje implements Mostrable{
 	private String nombre;
 	private int posX;
 	private int posY;
 	private Celda posAnterior;	
+	private static int vida = 10;
 	
 	public Celda getposAnterior() {
 		return posAnterior;
@@ -49,14 +50,32 @@ public class Personaje implements Mostrable{
 		this.nombre = nombre;
 	}
 	
-	public void Imprimir(){
+	/*public void Imprimir(){
 		System.out.println("Nombre: " + getNombre() + " PosX: " + getPosX() + " PosY: " + getPosY());
+	}*/
+
+	//Para el polimorfismo -> Metodo abstracto para saber si esta vivo el personaje o el enemigo
+	public abstract boolean estaVivo(); 
+	
+	public void reducir_vida_movimiento(){
+		setVida(getVida()-1);
+	}
+	
+	public static int getVida() {
+		return vida;
 	}
 
+	public static void setVida(int vida) {
+		Personaje.vida = vida;
+	}
 	
+	public void Imprimir(){
+		System.out.println(getVida());
+		//super.Imprimir();
+	}
 }
 
-class PersonajePrincipal extends Personaje implements Mostrable {
+class PersonajePrincipal extends Personaje implements Mostrable{
 	
 	private static int vida = 10;
 	
@@ -81,7 +100,10 @@ class PersonajePrincipal extends Personaje implements Mostrable {
 		super.Imprimir();
 	}
 	
-	
+	public boolean estaVivo(){
+		if(vida<=0) return false;
+		else return true;
+	}
 	
 }
 
@@ -92,6 +114,11 @@ class Enemigo extends Personaje implements Mostrable{
 
 	public void Imprimir(){
 		super.Imprimir();
+	}
+	
+	public boolean estaVivo(){
+		if(-1<=0) return false;
+		else return true;
 	}
 }
 

@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class juego {
-	private PersonajePrincipal cristobal;
-	private PersonajePrincipal hermana;
+	private Personaje cristobal;
+	private Personaje hermana;
 	private GestorMapas gestor;
 	private Mapa mapa_actual;
 	private InterpreteComandos Interprete;
@@ -430,6 +430,7 @@ public class juego {
 	public void Jugar(){
 		while(true){
 			if(EmpezarJuego()==0)break;
+			cristobal.setVida(10);
 		}
 	}
 	
