@@ -1,0 +1,15 @@
+Modificacion 1:
+-En el codigo solo se ha modificado InterpreteComandos.java(linea 12) el metodo revisarTrigger para que modifique el tipo de celda de las casillas triger
+ una vez que se han pisado. El resto de las modificaciones se han hecho en el mapa2.txt que corresponde al segundo nivel
+ debido a que el programa interpreta los caracteres que lee y les da las propiedades necesarias.
+
+Modificacion 2:
+-Se ha modificado Renderizador.java(linea 138) el metodo mostrarAccionCristobal para que cuando Cristobal(caracter A) pise en la casilla C pertienente le aparezca la secuencia
+ de comandos que debe ingresar para liberar a su hermana(caracter B)
+
+-Se ha modificado juego.java(linea 42) el metodo MatarEnemigo para que reciba el nivel en el que se encuentra y pueda realizar
+ otro  tipo de acciones cuando esta en el nivel 1. Tambien recibe la secuencia ingresa y verifica si es correcta, de ser asi
+ inicia la animacion necesaria.
+
+-Se ha modificado juego.java(linea 484) el metodo EmpezarJuego para que cuando detecte que la hermana de cristobal(caracter B) haya pisado el trigger y cristobal
+ pise la casilla de accion C para liberarla comienze el ingreso de la secuencia.
