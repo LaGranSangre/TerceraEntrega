@@ -1,0 +1,7 @@
+***************Instrucciones**************
+Movimientos:          ARRIBA
+            IZQUIERDA ABAJO DERECHA
+Cristobal:              W
+                      A S D
+Hermana:                I
+                      J K L

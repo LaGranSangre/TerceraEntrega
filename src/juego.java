@@ -467,6 +467,7 @@ public class juego {
 						break;
 					} else{
 						 cristobal.setVida( cristobal.getVida() - 2);
+						 Rend.mostrarMapa(mapa_actual, cristobal, hermana);
 						 if(cristobal.getVida()<=0){
 							 System.out.println("GAME OVER!! FIN DEL JUEGO");
 							 this.FinalizarJuego();
@@ -487,6 +488,10 @@ public class juego {
 					str = s.nextLine();
 					if ( MatarEnemigo(str) == 1)
 						break;
+					else{
+						cristobal.setVida( cristobal.getVida() - 2);
+						Rend.mostrarMapa(mapa_actual, cristobal, hermana);
+					}
 				}
 			}
 			
