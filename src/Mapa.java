@@ -93,11 +93,7 @@ public class Mapa {
 		for(i=0;i<numFil;i++){
 			for(j=0;j<numCol;j++)
 				if(this.isEnemigo())
-<<<<<<< HEAD
 					this.mapa[i][j].setTipo(4);			
-=======
-					this.mapa[i][j].setCelda('0');			
->>>>>>> origin/master
 		}
 	}
 	

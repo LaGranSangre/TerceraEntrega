@@ -5,12 +5,9 @@ public class Personaje {
 	private int posY;
 	private Celda pos_anterior;
 	
-<<<<<<< HEAD
 	/*public Personaje(){
 		
 	}*/
-=======
->>>>>>> origin/master
 	
 	public Celda getPos_anterior() {
 		return pos_anterior;
@@ -21,12 +18,9 @@ public class Personaje {
 	}
 
 	public Personaje(){
-<<<<<<< HEAD
 		this.nombre="nuevo";
 		this.posX=0;
 		this.posY=0;
-=======
->>>>>>> origin/master
 		this.pos_anterior=new Celda();
 	}
 	
