@@ -1,5 +1,5 @@
 
-public class Personaje {
+public class Personaje implements Mostrable{
 	private String nombre;
 	private int posX;
 	private int posY;
@@ -56,7 +56,7 @@ public class Personaje {
 	
 }
 
-class PersonajePrincipal extends Personaje{
+class PersonajePrincipal extends Personaje implements Mostrable {
 	
 	private static int vida = 10;
 	
@@ -85,7 +85,7 @@ class PersonajePrincipal extends Personaje{
 	
 }
 
-class Enemigo extends Personaje{
+class Enemigo extends Personaje implements Mostrable{
 	public Enemigo(){
 		
 	}
