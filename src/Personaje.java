@@ -3,25 +3,21 @@ public class Personaje {
 	private String nombre;
 	private int posX;
 	private int posY;
-	private Celda pos_anterior;
+	private Celda posAnterior;	
 	
-	/*public Personaje(){
-		
-	}*/
-	
-	public Celda getPos_anterior() {
-		return pos_anterior;
+	public Celda getposAnterior() {
+		return posAnterior;
 	}
 
-	public void setPos_anterior(Celda pos_anterior) {
-		this.pos_anterior = pos_anterior;
+	public void setposAnterior(Celda posAnterior) {
+		this.posAnterior = posAnterior;
 	}
 
 	public Personaje(){
 		this.nombre="nuevo";
 		this.posX=0;
 		this.posY=0;
-		this.pos_anterior=new Celda();
+		this.posAnterior=new Celda();
 	}
 	
 	public Personaje(int posX, int posY){

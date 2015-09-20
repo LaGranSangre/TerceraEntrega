@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class GestorMapas {
-	private List<String>nombresMapas;
+	private List<String> nombresMapas;
 	
 	public GestorMapas(){
 		nombresMapas = new ArrayList<String>();
@@ -41,16 +41,12 @@ public class GestorMapas {
 						cristobal.setPosY(fila);	
 						mapa.getMapa()[fila][index].setCelda('S');
 						mapa.getMapa()[fila][index].setTipo('S');
-						//cristobal.getPos_anterior().setCelda(linea.charAt(index));
-						//cristobal.getPos_anterior().setTipo(linea.charAt(index));
-						}
+					}
 					if(celda=='B'){//le hermana						
 						hermana.setPosX(index);
 						hermana.setPosY(fila);
 						mapa.getMapa()[fila][index].setCelda('N');
 						mapa.getMapa()[fila][index].setTipo('N');
-						//hermana.getPos_anterior().setCelda(linea.charAt(index));
-						//hermana.getPos_anterior().setTipo(linea.charAt(index));
 						}
 				}
 				fila++;

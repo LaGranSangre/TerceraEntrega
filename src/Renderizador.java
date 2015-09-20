@@ -32,16 +32,7 @@ public class Renderizador {
 					System.out.print(impresionCelda(m.getMapa()[i][j])+" ");
 			}
 			System.out.println();
-		}		
-		/*System.out.println();
-		System.out.println("============================");
-		System.out.println("MATRIZ DE TIPOS");
-		System.out.println("============================");
-		for(int i=0;i<numFil;i++){
-			for(int j=0;j<numCol;j++)
-				System.out.print(mapa[i][j].getTipo() + " ");
-			System.out.println();
-		}*/
+		}				
 	}	
 
 	public char impresionCelda(Celda c){
@@ -135,12 +126,10 @@ public class Renderizador {
 		switch (nivel){
 		case 0:
 			System.out.println("Persione las teclas: WDEWW");
-			break;
-			//#Mod1-Ini
+			break;			
 		case 1: 	
 			System.out.println("Persione las teclas: QWEASD");  
-			break;
-			//#Mod1-Fin
+			break;			
 		case 2:
 			System.out.println("Presione las teclas: WQED");
 			break;

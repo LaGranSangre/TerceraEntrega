@@ -51,7 +51,7 @@ public class Celda {
 			tipo = 10;
 			break;
 		case 'T':
-			tipo=1;
+			tipo=11;
 			break;
 		}		
 	}
