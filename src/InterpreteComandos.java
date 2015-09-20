@@ -8,8 +8,12 @@ public class InterpreteComandos {
 	public void revisarTrigger(Mapa mapa,int x,int y){	
 		if(mapa.getMapa()[y][x].getCelda()=='T'){
 			for(int i=0;i<mapa.getNumFil();++i) 
-				if(mapa.getMapa()[i][x].getCelda()=='T')
-					mapa.getMapa()[i][x].setCelda('N');				
+				if(mapa.getMapa()[i][x].getCelda()=='T'){
+					//#Mod1-Ini
+					mapa.getMapa()[i][x].setCelda('N');
+					mapa.getMapa()[i][x].setTipo('N');
+					//#Mod1-Fin
+				}			
 			mapa.setEnemigo(true);
 		}
 	}
