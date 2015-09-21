@@ -70,7 +70,7 @@ public class InterpreteComandos {
 		case 'i': // Mover arriba
 		case 'I':
 			if (mapa.isEnemigo() == true) {
-				hermana.reducir_vida_movimiento();
+				((PersonajePrincipal)hermana).reducir_vida_movimiento();
 				break;
 			}
 			if (yH >= 1 && yH < numFil) {
@@ -85,7 +85,7 @@ public class InterpreteComandos {
 		case 'k': // Mover abajo
 		case 'K':
 			if (mapa.isEnemigo() == true) {
-				hermana.reducir_vida_movimiento();
+				((PersonajePrincipal)hermana).reducir_vida_movimiento();
 				break;
 			}
 			if (yH >= 0 && yH < numFil - 1) {
@@ -100,7 +100,7 @@ public class InterpreteComandos {
 		case 'l': // Mover derecha
 		case 'L':
 			if (mapa.isEnemigo() == true) {
-				hermana.reducir_vida_movimiento();
+				((PersonajePrincipal)hermana).reducir_vida_movimiento();
 				break;
 			}
 			if (xH >= 0 && xH < numCol - 1) {
@@ -115,7 +115,7 @@ public class InterpreteComandos {
 		case 'j':// Mover izquierda
 		case 'J':
 			if (mapa.isEnemigo() == true) {
-				hermana.reducir_vida_movimiento();
+				((PersonajePrincipal)hermana).reducir_vida_movimiento();
 				break;
 			}
 			if (xH >= 1 && xH < numCol) {

@@ -57,22 +57,22 @@ public abstract class Personaje implements Mostrable{
 	//Para el polimorfismo -> Metodo abstracto para saber si esta vivo el personaje o el enemigo
 	public abstract boolean estaVivo(); 
 	
-	public void reducir_vida_movimiento(){
+	/*public void reducir_vida_movimiento(){
 		setVida(getVida()-1);
 	}
 	
-	/*public static int getVida() {
+	public static int getVida() {
 		return vida;
 	}
 
 	public static void setVida(int vida) {
 		Personaje.vida = vida;
-	}*/
+	}
 	
 	public void Imprimir(){
 		System.out.println(getVida());
 		//super.Imprimir();
-	}
+	}*/
 }
 
 class PersonajePrincipal extends Personaje implements Mostrable{
@@ -98,7 +98,7 @@ class PersonajePrincipal extends Personaje implements Mostrable{
 	
 	public void Imprimir(){
 		System.out.println(vida);
-		super.Imprimir();
+		//super.Imprimir();
 	}
 	
 	public boolean estaVivo(){
@@ -117,7 +117,7 @@ class Enemigo extends Personaje implements Mostrable{
 	}
 
 	public void Imprimir(){
-		super.Imprimir();
+		//super.Imprimir();
 	}
 	
 	public boolean estaVivo(){
