@@ -4,7 +4,7 @@ public abstract class Personaje implements Mostrable{
 	private int posX;
 	private int posY;
 	private Celda posAnterior;	
-	private static int vida = 10;
+	//private static int vida = 10;
 	
 	public Celda getposAnterior() {
 		return posAnterior;
@@ -61,13 +61,13 @@ public abstract class Personaje implements Mostrable{
 		setVida(getVida()-1);
 	}
 	
-	public static int getVida() {
+	/*public static int getVida() {
 		return vida;
 	}
 
 	public static void setVida(int vida) {
 		Personaje.vida = vida;
-	}
+	}*/
 	
 	public void Imprimir(){
 		System.out.println(getVida());
@@ -93,6 +93,7 @@ class PersonajePrincipal extends Personaje implements Mostrable{
 
 	public static void setVida(int vida) {
 		PersonajePrincipal.vida = vida;
+		//this.vida = vida;
 	}
 	
 	public void Imprimir(){
@@ -105,6 +106,9 @@ class PersonajePrincipal extends Personaje implements Mostrable{
 		else return true;
 	}
 	
+	public void mostrarMensaje(){
+		System.out.println("ESTAMOS EN PERSONAJE PRINCIPAL");
+	}
 }
 
 class Enemigo extends Personaje implements Mostrable{

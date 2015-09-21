@@ -21,7 +21,7 @@ public class Renderizador {
 		System.out.println("MATRIZ DE CARACTERES");
 		System.out.println("============================");
 		System.out.print("Vida: ");
-		System.out.println(p1.getVida());
+		System.out.println(((PersonajePrincipal)p1).getVida());
 		for(int i=0;i<m.getNumFil();i++){
 			for(int j=0;j<m.getNumCol();j++){
 				if (j==xC && i==yC)

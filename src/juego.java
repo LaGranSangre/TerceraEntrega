@@ -428,9 +428,11 @@ public class juego {
 	
 	
 	public void Jugar(){
+		PersonajePrincipal p = new PersonajePrincipal();
 		while(true){
 			if(EmpezarJuego()==0)break;
-			cristobal.setVida(10);
+			//cristobal.setVida(10);
+			((PersonajePrincipal)cristobal).setVida(10);
 		}
 	}
 	
@@ -444,7 +446,7 @@ public class juego {
 		String str;
 		jugando=true;
 		while (true) {
-			if(cristobal.getVida()<=0){
+			if(((PersonajePrincipal)cristobal).getVida()<=0){
 				 System.out.println("GAME OVER!! FIN DEL JUEGO");
 				 this.FinalizarJuego();
 				 return 1;
@@ -467,9 +469,9 @@ public class juego {
 						 AccionDuo( mapa_actual);
 						break;
 					} else{
-						 cristobal.setVida( cristobal.getVida() - 2);
+						 ((PersonajePrincipal)cristobal).setVida(((PersonajePrincipal)cristobal).getVida() - 2);
 						 Rend.mostrarMapa(mapa_actual, cristobal, hermana);
-						 if(cristobal.getVida()<=0){
+						 if(((PersonajePrincipal)cristobal).getVida()<=0){
 							 System.out.println("GAME OVER!! FIN DEL JUEGO");
 							 this.FinalizarJuego();
 							 return 1;
@@ -490,7 +492,7 @@ public class juego {
 					if ( MatarEnemigo(str) == 1)
 						break;
 					else{
-						cristobal.setVida( cristobal.getVida() - 2);
+						((PersonajePrincipal)cristobal).setVida(((PersonajePrincipal)cristobal).getVida() - 2);
 						Rend.mostrarMapa(mapa_actual, cristobal, hermana);
 					}
 				}
