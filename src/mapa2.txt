@@ -1,12 +1,12 @@
-            NTEE
-            NTEE
+            NNNN
+            NNNN
             pppp
-            SSCS
+            SSSS
             SSSS
             nnnn
             nnnn
-BNNNNNgNNNNNnnnn
-NNNNNDgNNNDNnnnn
+BNTEENgNNNNNnnnn
+NNTEEDgNNNDNnnnn
 ppppppgpppppnnnn
 SSSSSDgSSSDSnnnn
-ASSSSSgSSSSSnnnn
+ASSCSSgSSSSSnnnn

@@ -1,15 +1,13 @@
-Modificacion 1:
--En el codigo solo se ha modificado InterpreteComandos.java(linea 12) el metodo revisarTrigger para que modifique el tipo de celda de las casillas triger
- una vez que se han pisado. El resto de las modificaciones se han hecho en el mapa2.txt que corresponde al segundo nivel
- debido a que el programa interpreta los caracteres que lee y les da las propiedades necesarias.
+﻿Modificacion 1:
+-Se ha modificado Juego.java metodo empezarJuego linea 476 se verifica si se ha ingresado el caracter
+G o g para crear el archivo de guardado del juego. Se guardan todos los atributos de juego menos renderizador
+interpreteComandos y GestorMapas debido a que son variables que permanecen iguales con cada ejecucion del programa
+-Se ha modificado Renderizador.java metodo mostrarMapa linea 39 para añadir el mensaje que notifica
+al usuario la tecla que debe presionar para guardar el estado del juego.
 
 Modificacion 2:
--Se ha modificado Renderizador.java(linea 138) el metodo mostrarAccionCristobal para que cuando Cristobal(caracter A) pise en la casilla C pertienente le aparezca la secuencia
- de comandos que debe ingresar para liberar a su hermana(caracter B)
-
--Se ha modificado juego.java(linea 42) el metodo MatarEnemigo para que reciba el nivel en el que se encuentra y pueda realizar
- otro  tipo de acciones cuando esta en el nivel 1. Tambien recibe la secuencia ingresa y verifica si es correcta, de ser asi
- inicia la animacion necesaria.
-
--Se ha modificado juego.java(linea 484) el metodo EmpezarJuego para que cuando detecte que la hermana de cristobal(caracter B) haya pisado el trigger y cristobal
- pise la casilla de accion C para liberarla comienze el ingreso de la secuencia.
+-Los archivos de modificados en esta parte se encuentran dentro de la carpeta src
+-Se ha modificado el archivo CompilarJuego.cmd linea 9 para incluir las dos nuevas librerias necesarias a la
+compilacion de los archivos de la carpeta Vista
+-Se ha modificado el archivo CompuilarJuego.cmd linea 17 para modificar el classpath del manifest para
+que pueda encontrar las referencias a las nuevas librerias.

@@ -1,0 +1,17 @@
+[
+    {
+    "Nombre" : "Escarabajo",
+    "PosX": 4,
+    "PosY": 13,	
+    "DimensionX": 1,
+    "DimensionY": 1
+    }, 
+    {
+    "Nombre" : "Mono",
+    "PosX": 4,
+    "PosY": 2,	
+    "DimensionX": 1,
+    "DimensionY": 0
+    }
+	
+]
